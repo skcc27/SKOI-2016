@@ -1,0 +1,26 @@
+body {
+  font-family: 'Pridi', serif;
+}
+h2 {
+  font-family: 'Prompt', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+footer {
+  background: #808080;
+}
+.row {
+  margin: 10px 0;
+}
+ul.nav> li> a {
+    font-family: 'Pridi', serif;
+    font-size: 1.2em !important;
+    font-weight: bold;
+}
+.navbar, .navbar.navbar-default {
+    background-color: #ffd54f;
+    color: #000;
+}
+#faq > .card {
+  margin: 1%;
+}
