@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+}
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.5em;
+}
+h2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: .5em;
+}
+div.wrapper {
+    height: 100%;
+}
+div.main {
+    height: 100% !important;
+    background: #808080;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 5%;
+}
+/**** Countodwn ****/
+div.countdown {
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 1%;
+}
+div#countdown {
+    margin: 1%;
+}
+/**** SKOI Logo ****/
+img.skoi-logo {
+    margin: 0 auto;
+    width: 30%;
+}
+/**** Buttons ****/
+div.button-group {
+    margin: 2%;
+}
+button.btn-register {
+    width: 50%;
+}
+button.btn-entersite {
+    width: 50%;
+}
+/**** Modals ****/
+h4.modal-title {
+  font-family: 'Prompt', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 1%;
+}
+div.modal-header > button {
+  font-family: 'Prompt', sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+}
+div.modal-body > h2 {
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div.modal-body > div.form-group > label {
+  font-family: 'Pridi', serif;
+  font-size: 1em;
+}
