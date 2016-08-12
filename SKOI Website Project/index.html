@@ -11,52 +11,204 @@
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-	<!--     Fonts and icons     -->
+	<!-- Icons -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link href='https://fonts.googleapis.com/css?family=Pridi:400,300,200,500,600,700|Prompt:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=thai,latin' rel='stylesheet'
-					type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link href="https://fonts.googleapis.com/css?family=Pridi:200,300,400,500,600,700&subset=thai" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Prompt:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=thai,latin' rel='stylesheet' type='text/css'>
 
 	<!-- CSS Files -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/material-kit.css" rel="stylesheet" />
-	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/index.css" rel="stylesheet" />
+
+	<!-- Plugin for Countdown section -->
+	<script src="assets/js/coutndown.js" type="text/javascript"></script>
+
+
 </head>
 
 <body>
 
-	<!-- Navbar will come here -->
+	<div class="wrapper">
+		<div class="main">
+			<div class="container">
 
-	<!-- end navbar -->
+				<div class="row text-center">
 
-	<!-- <div class="wrapper">
-		<div class="header">
+					<img class="img-rounded img-responsive img-raised skoi-logo" src="assets/img/placeholder.jpg" alt="#">
 
-		</div> -->
-	<!-- you can use the class main-raised if you want the main area to be as a page with shadows -->
-	<div class="main">
-		<div class="container-fluid fill">
+					<div class="countdown">
+						<h1>เหลือเวลาอีก</h1>
+						<div id="countdown"></div>
+						<h2>จนกระทั่งปิดรับสมัคร</h2>
+					</div>
 
-			<div class="row vcenter">
-
-				<img class="img-rounded img-responsive img-raised skoi-logo text-center" src="assets/img/placeholder.jpg" alt="#">
-
-				<div class="countdown text-center">
-					<h1>เหลือเวลาอีก</h1>
-					<div id="countdown"></div>
-					<h2>จนกระทั่งปิดรับสมัคร</h2>
+					<div class="button-group">
+						<div class="col-md-6">
+							<button class="btn btn-success btn-lg btn-register pull-right" data-toggle="modal" data-target="#register">Register</button>
+						</div>
+						<div class="col-md-6">
+							<a href="main.html">
+								<button class="btn btn-warning btn-lg btn-entersite pull-left">Enter Site</button>
+							</a>
+						</div>
+					</div>
 				</div>
-
-				<div class="button-group text-center">
-					<button class="btn btn-success btn-lg btn-register">Register</button>
-					<a href="main.html"><button class="btn btn-warning btn-lg btn-entersite">Enter Site</button></a>
-				</div>
-
 			</div>
-
 		</div>
 	</div>
+
+	<!-- Modal Core -->
+	<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<h4 class="modal-title" id="myModalLabel">Register</h4>
+				</div>
+				<div class="modal-body">
+					<h2>Team</h2>
+					<div class="form-group label-floating">
+						<label class="control-label">ชื่อทีม</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">โรงเรียน</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">จังหวัด</label>
+						<input type="text" class="form-control">
+					</div>
+					<hr />
+					<h2>Consultant</h2>
+					<div class="form-group label-floating">
+						<label class="control-label">ชื่อคุณครูผู้ควบคุมทีม</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">นามสกุลคุณครูผู้ควบคุมทีม</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Email</label>
+						<input type="email" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">เบอร์โทรศัพท์มือถือ</label>
+						<input type="text" class="form-control" data-inputmask="'mask': '099-999-9999'" />
+					</div>
+					<hr />
+					<h2>Member 1 (Leader)</h2>
+					<div class="form-group label-floating">
+						<label class="control-label">ชื่อ</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">นามสกุล</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="grade">ระดับชั้น</label>
+						<select class="form-control" id="grade">
+							<option>ม.1</option>
+							<option>ม.2</option>
+							<option>ม.3</option>
+							<option>ม.4</option>
+							<option>ม.5</option>
+							<option>ม.6</option>
+							<option>ปวช. ปี 1</option>
+							<option>ปวช. ปี 2</option>
+							<option>ปวช. ปี 3</option>
+						</select>
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">เบอร์โทรศัพท์มือถือ</label>
+						<input type="text" class="form-control" data-inputmask="'mask': '099-999-9999'" />
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Email</label>
+						<input type="email" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<hr />
+					<h2>Member 2</h2>
+					<div class="form-group label-floating">
+						<label class="control-label">ชื่อ</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">นามสกุล</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="grade">ระดับชั้น</label>
+						<select class="form-control" id="grade">
+							<option>ม.1</option>
+							<option>ม.2</option>
+							<option>ม.3</option>
+							<option>ม.4</option>
+							<option>ม.5</option>
+							<option>ม.6</option>
+							<option>ปวช. ปี 1</option>
+							<option>ปวช. ปี 2</option>
+							<option>ปวช. ปี 3</option>
+						</select>
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Email</label>
+						<input type="email" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<hr />
+					<h2>Member 3</h2>
+					<div class="form-group label-floating">
+						<label class="control-label">ชื่อ</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">นามสกุล</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="grade">ระดับชั้น</label>
+						<select class="form-control" id="grade">
+							<option>ม.1</option>
+							<option>ม.2</option>
+							<option>ม.3</option>
+							<option>ม.4</option>
+							<option>ม.5</option>
+							<option>ม.6</option>
+							<option>ปวช. ปี 1</option>
+							<option>ปวช. ปี 2</option>
+							<option>ปวช. ปี 3</option>
+						</select>
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Email</label>
+						<input type="email" class="form-control">
+					</div>
+					<div class="form-group label-floating">
+						<label class="control-label">Password</label>
+						<input type="password" class="form-control">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info btn-simple">Submit</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -67,16 +219,16 @@
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
 
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
-
-<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<!-- Control Center for Material Kit -->
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 
-<!-- Plugin for Countdown section -->
-<script src="assets/js/coutndown.js" type="text/javascript"></script>
+<script src="assets/js/inputmask.js" type="text/javascript"></script>
+<script src="assets/js/inputmask.phone.extensions.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		Inputmask().mask(document.querySelectorAll("input"));
+	});
+</script>
 
 </html>
